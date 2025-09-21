@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Happy Birthday Megha 🎉</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+      background: linear-gradient(135deg, #ff4e50, #f9d423);
+      font-family: 'Comic Sans MS', cursive, sans-serif;
+      color: white;
+      text-align: center;
+    }
+
+    h1 {
+      font-size: 70px;
+      margin-top: 100px;
+      text-shadow: 0 0 10px #fff, 0 0 20px #ff4081, 0 0 30px #ff4081, 0 0 40px #ff4081;
+      animation: glow 2s infinite alternate;
+    }
+
+    h2 {
+      font-size: 30px;
+      margin-top: 20px;
+      color: #ffe57f;
+      text-shadow: 0 0 5px #fff, 0 0 10px #ffe57f;
+    }
+
+    @keyframes glow {
+      from { text-shadow: 0 0 10px #ff4081, 0 0 20px #ff4081; }
+      to { text-shadow: 0 0 20px #ff80ab, 0 0 40px #ff80ab; }
+    }
+
+    .balloon {
+      position: absolute;
+      bottom: -150px;
+      width: 80px;
+      height: 100px;
+      background: red;
+      border-radius: 50% 50% 50% 50% / 60% 60% 40% 40%;
+      animation: rise 10s linear infinite;
+    }
+
+    .balloon::after {
+      content: '';
+      position: absolute;
+      width: 2px;
+      height: 100px;
+      background: #fff;
+      left: 50%;
+      top: 100px;
+    }
+
+    @keyframes rise {
+      0% { transform: translateY(0); }
+      100% { transform: translateY(-120vh); }
+    }
+  </style>
+</head>
+<body>
+  <h1>🎉 Happy Birthday Megha 🎉</h1>
+  <h2>May your day be filled with love, laughter & joy 💖</h2>
+
+  <!-- Auto-play birthday song -->
+  <audio autoplay loop>
+    <source src="https://www.bensound.com/bensound-music/bensound-sunny.mp3" type="audio/mpeg">
+  </audio>
+
+  <!-- Balloons -->
+  <div class="balloon" style="left: 10%; background:#ff6f61; animation-duration: 9s;"></div>
+  <div class="balloon" style="left: 30%; background:#42a5f5; animation-duration: 11s;"></div>
+  <div class="balloon" style="left: 50%; background:#66bb6a; animation-duration: 13s;"></div>
+  <div class="balloon" style="left: 70%; background:#ab47bc; animation-duration: 10s;"></div>
+  <div class="balloon" style="left: 90%; background:#fbc02d; animation-duration: 12s;"></div>
+</body>
+</html>
